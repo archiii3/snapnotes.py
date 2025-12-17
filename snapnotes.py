@@ -61,7 +61,8 @@ def save_store(data: dict) -> None:
     with tmp.open('w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     shutil.move(str(tmp), str(NOTES_FILE))
-
+ README (in this file header)
+- A single-file CLI app (works with Python 3.8+)
 
 def add_note(title: str, body: str, tags: Optional[List[str]]) -> Note:
     data = load_store()
