@@ -213,3 +213,8 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main())
+
+Features:
+- add, list, view, delete, search, export commands
+- stores notes as JSON in user home (~/.snapnotes/notes.json)
+- small and easy to extend
