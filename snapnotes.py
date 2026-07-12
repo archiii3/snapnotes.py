@@ -180,6 +180,10 @@ def main(argv: Optional[List[str]] = None) -> int:
         for n in notes:
             print(f"[{n.id}] {n.title} ({', '.join(n.tags)})")
         return 0
+python snapnotes.py add "Buy milk" --tags shopping,home
+  python snapnotes.py list
+  python snapnotes.py search milk
+  python snapnotes.py export notes.md
 
     if args.cmd == 'view':
         n = find_note(args.id)
