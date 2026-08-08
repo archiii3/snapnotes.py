@@ -89,13 +89,13 @@ if __name__ == "__main__":
         print("python ghostvault.py decrypt filename.gv")
         exit()
 
-    action = sys.argv[1]
-    filename = sys.argv[2]
-    password = input("Password: ")
-
     if action == "encrypt":
         encrypt_file(filename, password)
     elif action == "decrypt":
         decrypt_file(filename, password)
     else:
         print("Unknown command.")
+
+    action = sys.argv[1]
+    filename = sys.argv[2]
+    password = input("Password: ")
